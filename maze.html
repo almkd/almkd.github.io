@@ -1,0 +1,76 @@
+<!Doctype html>
+<html>
+<head>
+<style>
+canvas {
+position: absolute;
+top:150;
+left:150;
+</style>
+</head>
+<body>
+<h1> HTML5 </h1>
+<canvas id='myCanvas' width='400' height='400' style='border:1px solid black;'>
+</canvas>
+<script>
+var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+ctx.beginPath();
+ctx.moveTo(150,0);
+ctx.lineTo(150,50);
+ctx.moveTo(150,50);
+ctx.lineTo(200,50);
+ctx.moveTo(350,0);
+ctx.lineTo(350,60);
+ctx.moveTo(350,110);
+ctx.lineTo(350,350);
+ctx.strokeStyle= 'red';
+ctx.stroke();
+ctx.beginPath();
+ctx.moveTo(45,110);
+ctx.lineTo(350,110);
+ctx.moveTo(45,110);
+ctx.lineTo(45,55);
+ctx.moveTo(275,110);
+ctx.lineTo(275,55);
+ctx.lineTo(275,350);
+ctx.moveTo(275,350);
+ctx.lineTo(205,350);
+ctx.moveTo(205,350);
+ctx.lineTo(205,400);
+ctx.moveTo(150,110);
+ctx.lineTo(150,290);
+ctx.strokeStyle= 'red';
+ctx.stroke();
+ctx.beginPath();
+ctx.moveTo(150,290);
+ctx.lineTo(90,290);
+ctx.lineTo(200,290);
+ctx.moveTo(90,290);
+ctx.lineTo(90,350);
+ctx.strokeStyle= 'red';
+ctx.stroke();
+ctx.beginPath();
+ctx.moveTo(300,200);
+ctx.lineTo(300,200);
+ctx.strokeStyle= 'red';
+ctx.closePath();
+ctx.beginPath();
+ctx.moveTo(0,200);
+ctx.lineTo(40,200);
+ctx.strokeStyle= 'red';
+ctx.stroke();
+ctx.closePath();
+</script>
+<svg width="400" height="400">
+<g>
+<circle cx='10' cy='10' r='5' fill='green' stroke='black' stroke-width='3'
+/>
+</circle>
+<animateMotion path='M 170 0 V 30 H 250 V 80 H 50 V 10 H 30 V 150 H 100 V 270 H 50 V 350 H 180 V 300 H 250 V 250 H 150 V 150' dur='5s'
+repeatCount = '1'/>
+</g>
+</svg>
+</body>
+</html>
+
